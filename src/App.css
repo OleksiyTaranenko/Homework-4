@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+  background: lightcyan;
 }
-
-.App-logo {
-  height: 40vmin;
+.container {
+  margin: auto;
+  max-width: 600px;
+}
+.todoBox {
+  padding: 30px;
+  margin-top: 50px;
+  background: lightslategrey;
+  border-radius: 10px;  
+}
+.title h1 {
+  color: lightcyan;
+}
+.todoList {
+  width: 100%;
+  height: auto;
+}
+ul.list {
+  position: relative;
+  padding: 22px;
+  color: whitesmoke;
+}
+.list li {
+  list-style: none;
+  padding: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid darkslategrey;
+}
+#addInput {
+  height: 30px;
+  width: 240px;
+}
+input#addinput {
+  padding: 8px 12px;
+  float: left;
+  outline: none;
+  border: 1px solid lightslategrey;
+}
+button#addBtn {
+  padding: 9px 20px;
+  margin-top: 10px;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button#addBtn:hover {
+  background: lightcyan;
+  color: darkslategrey;
+}
+button#removeBtn {
+  padding: 9px 22px;
+  margin: 10px 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button#removeBtn:hover {
+  background: lightcyan;
+  color: darkslategrey;
+}
+.listDiv {
+  height: 400px;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: darkslategrey;
+}
+.icon {
+  float: right;
+  padding: 5px;
+  cursor: pointer;
+}
+.icon img {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  font-size: 13px;
   pointer-events: none;
+  border-radius: 8px;
+  opacity: 37%;
+  transition: 0.2s ease-in-out;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon:hover img {
+  font-size: 14px;
+  opacity: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rBox {
+  height: 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.falling {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.5s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary {
+  background-color: dimgrey;
+  border: none;
+  color: whitesmoke;
 }
